@@ -1,4 +1,4 @@
-const deadline = '12/10/22 6:00:00 GMT-6'
+const deadline = '12/10/22 6:00:00 GMT-5'
 
 function getTimeRemaining(endtime){
     const total = Date.parse(endtime) - Date.parse(new Date());
