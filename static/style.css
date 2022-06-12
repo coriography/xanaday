@@ -1,4 +1,78 @@
+.font-red-rose {
+  font-family: 'Red Rose', cursive;
+}
+
 .background {
     background-image: url(static/xanadu_neon.jpeg);
     background-size: cover;
+    z-index: -1;
 }
+
+.clock-box {
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #ba89ff,
+              0 0 0.8rem #ba89ff,
+              0 0 2.8rem #ba89ff,
+              inset 0 0 1.3rem #ba89ff;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ba89ff,
+        0 0 82px #ba89ff,
+        0 0 92px #ba89ff,
+        0 0 102px #ba89ff,
+        0 0 151px #ba89ff;
+  }
+
+  @keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #ba89ff,
+        0 0 80px #ba89ff,
+        0 0 90px #ba89ff,
+        0 0 100px #ba89ff,
+        0 0 150px #ba89ff;
+    }
+    0% {
+      /* Smaller blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #ba89ff,
+        0 0 45px #ba89ff,
+        0 0 55px #ba89ff,
+        0 0 70px #ba89ff,
+        0 0 80px #ba89ff;
+    }
+  }
+
+  .pulsate {
+    animation: pulsate 2.5s infinite alternate;     
+  }
+
+  .btn-primary {
+    background-color: #ba89ff;
+    border: #ba89ff;
+  }
+
+  .btn-primary:hover {
+    background-color: #ffffff;
+    border: #ffffff;
+    color: #ba89ff;
+    /* transition: transform .15s ease-in-out;
+    transform: scale(1.2); */
+  }
