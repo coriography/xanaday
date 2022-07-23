@@ -1,13 +1,18 @@
+* {
+  font-size: 14px;
+}
+
 .font-red-rose {
   font-family: 'Red Rose', cursive;
 }
 
 .font-title {
-  font-size: 8rem;
+  font-size: 10rem;
+  text-transform: uppercase;
 }
 
 .background {
-    background-image: url(static/xanadu_neon.jpeg);
+    background-image: url(xanadu_neon.jpeg);
     background-size: cover;
     z-index: -1;
 }
@@ -15,7 +20,7 @@
 .clock-box {
   border: 0.2rem solid #fff;
   border-radius: 2rem;
-  padding: 0.4em;
+  padding: 3rem;
   box-shadow: 0 0 .2rem #fff,
               0 0 .2rem #fff,
               0 0 2rem #ba89ff,
@@ -64,6 +69,17 @@
     }
   }
 
+  .time-unit {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .time-digits {
+    display: inline-block;
+    font-size: 8rem;
+    font-weight:bold;
+  }
+
   .pulsate {
     animation: pulsate 2.5s infinite alternate;     
   }
@@ -80,3 +96,28 @@
     /* transition: transform .15s ease-in-out;
     transform: scale(1.2); */
   }
+
+@media (max-width: 767px) {
+  .background {
+    background-position: center;
+    background-image: url(onj.jpeg);
+  }
+  .clock-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  .font-title {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+  }
+  .time-unit {
+    text-transform: uppercase;
+    font-size: .9rem;
+  }
+
+  .time-digits {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight:bold;
+  }
+}

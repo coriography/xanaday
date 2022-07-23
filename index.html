@@ -20,24 +20,32 @@
 </head>
 
 <body>
-    <div class="container-fluid g-0 vh-100">
-        <div class="background position-absolute h-100 w-100" style="background-image: url(static/xanadu_neon.jpeg);">
+    <div class="container-fluid g-0 vh-100 vw-100">
+        <div class="background position-absolute h-100 w-100">
         </div>
-        <div class="p-5">
+        <div class="p-5 h-100 d-flex flex-column justify-content-between">
             <div class="row justify-content-end">
-                <div class="col-xl-5 col-l-5 col-md-8 clock-box d-inline-block p-5 neon-text display-2 pulsate">
+                <div class="col-xl-7 col-lg-9 col-md-12 clock-box d-inline-block neon-text pulsate">
                     <div id="clockdiv">
-                        Days: <span class="days"></span><br>
-                        Hours: <span class="hours"></span><br>
-                        Minutes: <span class="minutes"></span><br>
-                        Seconds: <span class="seconds"></span>
+                        <div class="row text-center justify-content-between">
+                            <span id="days" class="time-digits col-3"></span>
+                            <span id="hours" class="time-digits col-3"></span>
+                            <span id="minutes" class="time-digits col-3"></span>
+                            <span id="seconds" class="time-digits col-3"></span>
+                        </div>
+                        <div class="row text-center justify-content-between">
+                            <span class="time-unit col-3">Days</span>
+                            <span class="time-unit col-3">Hours</span>
+                            <span class="time-unit col-3">Minutes</span>
+                            <span class="time-unit col-3">Seconds</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="text-white">
+                <div class="text-white text-center text-md-start">
                     <h1 class="font-title font-red-rose fw-bold display-1">Xanaday</h1>
-                    <p class="font-red-rose lead">December 10</p>
+                    <p class="font-red-rose text-uppercase display-6">December 10</p>
                     <button type="button" class="font-red-rose btn btn-primary">RSVP</button>
                 </div>
             </div>
