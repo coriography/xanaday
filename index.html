@@ -6,19 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/style.css">
 
     <title>Xanaday</title>
 
 </head>
 
 <body>
+    <div class="container-fluid g-0 vh-100">
+        <div class="background position-absolute h-100 w-100" style="background-image: url(static/xanadu_neon.jpeg);">
+        </div>
+        <div class="p-5">
+            <div class="row justify-content-end">
+                <div class="col-xl-5 col-l-5 col-md-8 clock-box d-inline-block p-5 neon-text display-2 pulsate">
+                    <div id="clockdiv">
+                        Days: <span class="days"></span><br>
+                        Hours: <span class="hours"></span><br>
+                        Minutes: <span class="minutes"></span><br>
+                        Seconds: <span class="seconds"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-white">
+                    <h1 class="font-title font-red-rose fw-bold display-1">Xanaday</h1>
+                    <p class="font-red-rose lead">December 10</p>
+                    <button type="button" class="font-red-rose btn btn-primary">RSVP</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/static/countdown.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/countdown.js"></script>
+
 </body>
 
 </html>
