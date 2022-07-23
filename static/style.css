@@ -2,6 +2,10 @@
   font-family: 'Red Rose', cursive;
 }
 
+.font-title {
+  font-size: 8rem;
+}
+
 .background {
     background-image: url(static/xanadu_neon.jpeg);
     background-size: cover;
